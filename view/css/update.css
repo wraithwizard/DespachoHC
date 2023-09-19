@@ -1,0 +1,102 @@
+
+/*l titulo de la tabla, que empieze en la columna 1 y acabe en la*/
+.tabla__titulo{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    background: var(--gris);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: white;
+}
+
+.datos{   
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    margin-bottom: 5rem;
+} 
+
+.tabla__titulo2{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background: var(--gris);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: white;
+}
+.datos-dir{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    margin-bottom: 5rem;
+    margin-left: 22rem;
+    margin-right: 2rem;
+}
+.datos-INE{    
+    margin-bottom: 5rem;
+    margin-left: 22rem;
+    display: block;
+    width: 84%;
+    margin-right: auto;
+}
+.INE{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.datos-update-submit{
+    background: var(--cafe);
+    cursor: pointer;
+    width: 10rem;
+    color: black;    
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: medium;
+    padding: 1rem;
+    text-align: center;
+}
+/* smartphone */
+@media screen and (max-width: 640px) {
+    .datos-dir{
+        margin-left: 0rem;
+        overflow: scroll;
+    }
+    .datos-INE{
+        margin-left: 0rem;
+        display: block;
+        width: 100%;
+    }
+    .datos__INE-img{
+        height: 100%;
+        width: 100%;
+        overflow: scroll;
+    }
+    .caratula{
+        width: 100%;
+    }   
+}
+
+@media screen and (min-width: 640px) and (max-width: 768px) {
+    .datos-dir{
+        margin-left: 0rem;
+        overflow: scroll;
+    }
+    .datos-INE{
+        margin-left: 0rem;
+        display: block;
+        width: 100%;
+    }
+    .datos__INE-img{
+        height: 100%;
+        width: 100%;
+        overflow: scroll;
+    }
+    .caratula{
+        width: 100%;
+    }   
+}
